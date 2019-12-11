@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FakeStagram</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="img/avatar.jpg">
+        </div>
+        <div class="profile-user">
+          <h1 class="profile-username">laksitha_d</h1>
+        </div>
+        <div class="profile-bio">
+          <p>Lorem ipsum dolor sit :)</p>
+        </div>
+      </div>
+    </header>
+
+    <div id="overlay" onclick="off()">
+      <img id="myImage" src="">
+      <div class="side-box">
+        <div class="user-info">
+          <img id="main" class="circular--square" src="img/avatar.jpg"/>
+          <div id="text" class="main-user"><strong><span>some_username</span></strong></div>
+          <div class="location">Los Angeles, California</div>
+        </div>
+        <div class="comments-info">
+          <img id="comment1" class="circular--square" src="img/img14.jpg"/>
+
+          <div id="text" class="comment1-user"><strong>FakeFriend</strong>Lol nice picture!!</div>
+
+          <div class="mins-comment1" style="color: grey;">13m&nbsp;&nbsp;&nbsp;&nbsp;Reply</div>
+
+          <img id="comment2" class="circular--square" src="img/img8.jpg"/>
+
+          <div id="text" class="comment2-user"><strong>fake_user</strong> Lorem ipsum .... consectetur adipisicing elit! @samer</div>
+
+          <div class="mins-comment2" style="color: grey;">11m&nbsp;&nbsp;&nbsp;&nbsp;Reply</div>
+        </div>
+        <div class="like-comment-share">
+          <div id="like" class="fa fa-heart-o" aria-hidden="true"></div>
+          <div id="comment" class="fa fa-comment-o" aria-hidden="true"></div>
+          <div id="share" class="fa fa-share-square-o" aria-hidden="true"></div>
+          <div id="bookmark" class="fa fa-bookmark-o" aria-hidden="true"></div>
+        </div>
+        <div id="text" class="num-likes"><span>20,340 likes</span></div>
+        <div class="bottom-mins"><span>56 MINUTES AGO</span></div>
+      </div>
+    </div>
+
+    <div class="images-container">
+      <div class="flex-container">
+
+        <div>
+          <img id="feed-pics" src="img/img1.jpg" onclick="on('img/img1.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img2.jpg" onclick="on('img/img2.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img3.jpg" onclick="on('img/img3.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img4.jpg" onclick="on('img/img4.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img5.jpg" onclick="on('img/img5.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img6.jpg" onclick="on('img/img6.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img7.jpg" onclick="on('img/img7.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img8.jpg" onclick="on('img/img8.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img9.jpg" onclick="on('img/img9.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img10.jpg" onclick="on('img/img10.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img11.jpg" onclick="on('img/img11.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img12.jpg" onclick="on('img/img12.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img13.jpg" onclick="on('img/img13.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img14.jpg" onclick="on('img/img14.jpg')">
+        </div>
+
+        <div>
+          <img id="feed-pics" src="img/img15.jpg" onclick="on('img/img15.jpg')">
+        </div>
+
+      </div>
+    </div>
+    <script>
+      function on(imgURL) {
+        document.getElementById("myImage").src = imgURL;
+        document.getElementById("overlay").style.display = "flex";
+      }
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
